@@ -1,0 +1,2 @@
+class CabazsController < ApplicationController
+end

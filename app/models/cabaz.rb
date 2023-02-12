@@ -1,0 +1,2 @@
+class Cabaz < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+module CabazsHelper
+end

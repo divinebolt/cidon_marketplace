@@ -1,2 +1,0 @@
-class CabazesController < ApplicationController
-end
