@@ -1,2 +1,0 @@
-class Cabaz < ApplicationRecord
-end
