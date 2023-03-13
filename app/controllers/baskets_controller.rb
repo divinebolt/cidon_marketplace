@@ -1,4 +1,8 @@
 class BasketsController < ApplicationController
+  before_action :authenticate_user!
+  before_action :authorize_admin!, only: [:new, :create, :edit, :update, :destroy]
+
+
 
   def index
     @baskets = Basket.all
@@ -40,4 +44,9 @@ class BasketsController < ApplicationController
     redirect_to baskets_path
   end
 
+  private
+
+  def basket_params
+    params.require(:basket).permit(:user_id, :product_id, :quantity)
+  end
 end
